@@ -1,0 +1,142 @@
+'use client'
+
+import { motion } from 'framer-motion'
+import { Users, MapPin, MessageCircle, FileCheck } from 'lucide-react'
+
+const steps = [
+  {
+    icon: Users,
+    title: 'Register Your Child',
+    description: 'Begin your journey with us',
+  },
+  {
+    icon: MapPin,
+    title: 'Visit Us',
+    description: 'Experience our campus',
+  },
+  {
+    icon: MessageCircle,
+    title: 'Consult',
+    description: 'Discuss with our team',
+  },
+  {
+    icon: FileCheck,
+    title: 'Admission',
+    description: 'Secure your admission',
+  },
+]
+
+export function Journey() {
+  return (
+    <section className="w-full py-20 md:py-32 bg-gradient-to-b from-blue-900 to-blue-950">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-20"
+        >
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6 text-balance">
+            Ready to Begin a Journey of Lifelong Excellence?
+          </h2>
+        </motion.div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Steps */}
+          <motion.div
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="space-y-6"
+          >
+            {steps.map((step, index) => {
+              const Icon = step.icon
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="flex items-start gap-4"
+                >
+                  <div className="flex-shrink-0">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-green-400 to-green-500 text-white font-bold">
+                      {index + 1}
+                    </div>
+                  </div>
+                  <div className="pt-1">
+                    <h3 className="text-xl font-semibold text-white mb-1">
+                      {step.title}
+                    </h3>
+                    <p className="text-blue-100 text-sm">
+                      {step.description}
+                    </p>
+                  </div>
+                </motion.div>
+              )
+            })}
+          </motion.div>
+
+          {/* Contact Form */}
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="relative"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl opacity-20 blur-xl" />
+            <div className="relative bg-white/10 backdrop-blur border border-white/20 rounded-2xl p-8">
+              <h3 className="text-2xl font-bold text-white mb-6">
+                Leave Us Your Info
+              </h3>
+              <p className="text-blue-100 text-sm mb-6">
+                And we will get back to you
+              </p>
+
+              <form className="space-y-4">
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Full Name"
+                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-blue-200 focus:outline-none focus:border-green-400 transition-colors"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-blue-200 focus:outline-none focus:border-green-400 transition-colors"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="tel"
+                    placeholder="Phone"
+                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-blue-200 focus:outline-none focus:border-green-400 transition-colors"
+                  />
+                </div>
+                <div>
+                  <textarea
+                    placeholder="Message"
+                    rows={4}
+                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-blue-200 focus:outline-none focus:border-green-400 transition-colors resize-none"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  className="w-full px-6 py-3 bg-gradient-to-r from-green-400 to-green-500 text-white font-semibold rounded-lg hover:from-green-500 hover:to-green-600 transition-all duration-300"
+                >
+                  Submit Now
+                </button>
+              </form>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  )
+}
