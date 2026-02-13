@@ -115,15 +115,37 @@ export function Journey() {
                 <div>
                   <input
                     type="tel"
-                    placeholder="Phone"
+                    placeholder="Whatsapp No."
                     className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-blue-200 focus:outline-none focus:border-green-400 transition-colors"
                   />
                 </div>
                 <div>
-                  <textarea
-                    placeholder="Message"
-                    rows={4}
-                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-blue-200 focus:outline-none focus:border-green-400 transition-colors resize-none"
+                  <select
+                    defaultValue=""
+                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-blue-400 focus:outline-none focus:border-green-400 transition-colors"
+                  >
+                    <option value="" disabled>
+                      Select Class
+                    </option>
+                    <option className='text-black' value="prenursery">Prenursery</option>
+                    <option className='text-black' value="nursery">Nursery</option>
+                    <option className='text-black'  value="kg1">KG 1</option>
+                    <option className='text-black'  value="kg2">KG 2</option>
+                    <option className='text-black' value="class1">Class 1</option>
+                    <option className='text-black' value="class2">Class 2</option>
+                    <option className='text-black' value="class3">Class 3</option>
+                    <option className='text-black' value="class4">Class 4</option>
+                    <option className='text-black' value="class5">Class 5</option>
+                    <option className='text-black' value="class6">Class 6</option>
+                    <option className='text-black' value="class7">Class 7</option>
+                    <option className='text-black' value="class8">Class 8</option>
+                  </select>
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="City"
+                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-blue-200 focus:outline-none focus:border-green-400 transition-colors"
                   />
                 </div>
                 <button
