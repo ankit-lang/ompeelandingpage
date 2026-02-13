@@ -90,12 +90,18 @@ export function Journey() {
           >
             <div id='contact-form'  className="absolute inset-0 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl opacity-20 blur-xl" />
             <div className="relative bg-white/10 backdrop-blur border border-white/20 rounded-2xl p-8">
-              <h3 className="text-2xl font-bold text-white mb-6">
-                Leave Us Your Info
-              </h3>
-              <p className="text-blue-100 text-sm mb-6">
-                And we will get back to you
+              <p className="text-blue-100 text-sm text-center  mb-6">
+                Ompee Global School
+                <br />
+                Sector 1, IMT Manesar (Gurgaon) Haryana – 122052
+                
               </p>
+              <h3 className="text-2xl text-center font-bold text-white mb-6">
+                <p>                Admissions Open</p>
+                Classes-Pre-Nursery to Grade 8 <br />
+                Session 2026-27
+
+              </h3>
 
               <form className="space-y-4">
                 <div>
@@ -127,7 +133,7 @@ export function Journey() {
                     <option value="" disabled>
                       Select Class
                     </option>
-                    <option className='text-black' value="prenursery">Prenursery</option>
+                    <option className='text-black' value="prenursery">Pre-Nursery</option>
                     <option className='text-black' value="nursery">Nursery</option>
                     <option className='text-black'  value="kg1">KG 1</option>
                     <option className='text-black'  value="kg2">KG 2</option>
