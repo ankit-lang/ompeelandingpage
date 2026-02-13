@@ -88,7 +88,7 @@ export function Journey() {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl opacity-20 blur-xl" />
+            <div id='contact-form'  className="absolute inset-0 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl opacity-20 blur-xl" />
             <div className="relative bg-white/10 backdrop-blur border border-white/20 rounded-2xl p-8">
               <h3 className="text-2xl font-bold text-white mb-6">
                 Leave Us Your Info

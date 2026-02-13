@@ -9,7 +9,7 @@ export function Footer() {
   return (
     <footer className="w-full bg-gradient-to-r from-blue-950 to-gray-900 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-96 mb-12">
           {/* Brand */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -26,7 +26,7 @@ export function Footer() {
           </motion.div>
 
           {/* Quick Links */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -47,10 +47,10 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </motion.div> */}
 
           {/* Resources */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -71,7 +71,7 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </motion.div> */}
 
           {/* Contact */}
           <motion.div
@@ -84,17 +84,24 @@ export function Footer() {
               Contact Info
             </h4>
             <ul className="space-y-3 text-sm">
-              <li className="flex items-center gap-2 text-gray-400">
+              <li className="flex items-center gap-2 mb-1 text-gray-400">
                 <MapPin className="w-4 h-4 text-green-400" />
-                New Delhi, India
+                Sector 1, IMT Manesar
+                (Gurgaon) Haryana –
+                122052
               </li>
+              <a href="tel:+919953350151" className="text-gray-400 hover:text-green-400 transition-colors">
+                
               <li className="flex items-center gap-2 text-gray-400">
                 <Phone className="w-4 h-4 text-green-400" />
-                +91 98353 50089
+                +91 9953350151
               </li>
+              </a>
               <li className="flex items-center gap-2 text-gray-400">
                 <Mail className="w-4 h-4 text-green-400" />
-                info@ompee.com
+                <a href="mailto:admission@ompeeglobalschool.com" className="text-green-400 hover:text-green-300 transition-colors">
+                  admission@ompeeglobalschool.com
+                </a>
               </li>
             </ul>
           </motion.div>

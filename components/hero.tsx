@@ -74,20 +74,23 @@ export function Hero() {
               variants={itemVariants}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <button className="group relative px-8 py-4 bg-gradient-to-r from-green-500 to-green-600 text-white font-semibold rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-green-500/50">
+              <a href="#contact-form">
+
+              <button    className="group relative px-8 py-4 bg-gradient-to-r from-green-500 to-green-600 text-white font-semibold rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-green-500/50">
                 <span className="relative flex items-center justify-center gap-2">
                   Apply for Admission
                   <motion.span
                     animate={{ x: [0, 4, 0] }}
                     transition={{ duration: 1.5, repeat: Infinity }}
-                  >
+                    >
                     <ArrowRight className="w-5 h-5" />
                   </motion.span>
                 </span>
               </button>
-              <button className="px-8 py-4 bg-white/10 backdrop-blur text-white font-semibold rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300">
+                    </a>
+              {/* <button className="px-8 py-4 bg-white/10 backdrop-blur text-white font-semibold rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300">
                 Learn More
-              </button>
+              </button> */}
             </motion.div>
           </motion.div>
 

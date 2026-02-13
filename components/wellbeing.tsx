@@ -77,9 +77,9 @@ export function Wellbeing() {
                 variants={itemVariants}
                 className="group relative"
               >
-                <div className="absolute -inset-1 bg-gradient-to-r from-gray-700 to-gray-800 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur" />
-                <div className="relative bg-gray-800 border border-gray-700 rounded-2xl p-8 hover:border-gray-600 transition-all duration-300">
-                  <div className={`inline-flex p-4 rounded-xl bg-gradient-to-br ${item.color} text-white mb-6`}>
+                <div className="absolute -inset-1 bg-gradient-to-r from-gray-700 to-gray-800 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur" />
+                <div className="relative bg-gray-800 border border-gray-700 rounded-2xl p-4 hover:border-gray-600 transition-all duration-300">
+                  <div className={`inline-flex p-4 rounded-xl bg-gradient-to-br ${item.color} text-white mb-4`}>
                     <Icon className="w-8 h-8" />
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-3">
@@ -88,9 +88,9 @@ export function Wellbeing() {
                   <p className="text-gray-300 leading-relaxed mb-6">
                     {item.description}
                   </p>
-                  <button className="text-green-400 hover:text-green-300 font-semibold text-sm transition-colors">
+                  {/* <button className="text-green-400 hover:text-green-300 font-semibold text-sm transition-colors">
                     Learn More →
-                  </button>
+                  </button> */}
                 </div>
               </motion.div>
             )
